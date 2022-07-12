@@ -10,7 +10,7 @@
 **在低特权级使用更高特权级的指令 / 访问非法地址等都会触发异常,出core**
 [ERROR] [kernel] PageFault in application, bad addr = 0x0, bad instruction = 0x80400408, core dumped.
 [ERROR] [kernel] IllegalInstruction in application, core dumped.
-[ERROR] [kernel] IllegalInstruction in application, core dumped.
+[ERROR] [kernel] IllegalInstruction in application, core dumped.  
 2. 深入理解 trap.S 中两个函数 __alltraps 和 __restore 的作用，并回答如下问题:
 
 - L40：刚进入 __restore 时，a0 代表了什么值。请指出 __restore 的两种使用情景。  
